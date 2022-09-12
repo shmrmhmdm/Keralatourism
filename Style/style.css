@@ -1,0 +1,56 @@
+
+#logo{
+    height: 80px;
+    width: 120px;
+    }
+#navi{
+    background-color:white;
+    
+}
+#boat{
+    height: 70px;
+    width: 80px;
+}
+.navbar-nav a{
+    margin: 30px;
+    
+}
+.cardopen{
+    margin-top: 130px;
+    
+
+}
+.nav-link{
+    border-radius: 10px;
+    border: 1px solid green;
+    color: green;
+}
+.nav-link:hover{
+    background-color: green;
+    color: white;
+}
+.footer{
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:whitesmoke;
+   color: green;
+   text-align: center;
+   font:small;
+}
+.cardopen p{
+    text-align: justify;
+    border: 1px solid green;
+    border-radius: 10px;
+    padding: 1em;
+}
+ .inner{
+    overflow: hidden;
+}
+.inner img{
+	transition:all 1.5s ease;
+}
+
+.inner:hover img{
+transform:scale(1.3);
+}
