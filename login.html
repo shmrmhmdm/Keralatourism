@@ -18,18 +18,22 @@
 </header>
 <body background="Images/login.jpg">
     
-    <form>
+    <form action="LoginHome.html" onsubmit="return validate();">
+      <h5 style="color: white;text-align: center;" >Login </h5>
         <div class="form-group">
           <label for="exampleInputEmail1" style="color: white;">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="registered email id">
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="registered email id">
+          <label for="error" id="error"></label>
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1" style="color: white;">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Your Password">
+          <input type="password" class="form-control" id="pwd" placeholder="Your Password">
+          <label for="pass" id="pass"></label>
         </div>
         
         <button type="submit" class="btn btn-primary">Log In</button>
         <label><a href="signup.html" style="color: white;text-decoration: none;" >  Create Account Now!</a>
       </form>
+      <script src="loginvalid.js"></script>
 </body>
 </html>

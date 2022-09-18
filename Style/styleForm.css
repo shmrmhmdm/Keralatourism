@@ -4,19 +4,15 @@ form{
     margin-top: 100px;
     border: 1px solid grey;
     padding: 10px;
+    background-color: rgb(7, 53, 68);
        
 }
 .nav{
-    border: 1px solid yellow;
+    border: 1px solid rgb(102, 102, 73);
 }
 header{
     border: 1px solid white;
 }
 label:hover{
     background-color: blue;
-}
-label{
-    border: 1px solid white;
-    padding: 5px;
-    border-radius: 10px;
 }
