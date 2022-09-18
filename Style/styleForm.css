@@ -2,17 +2,23 @@ form{
     margin-left: 400px;
     margin-right: 400px;
     margin-top: 100px;
-    border: 1px solid grey;
+    border: 2px solid white;
     padding: 10px;
-    background-color: rgb(7, 53, 68);
-       
+    background: linear-gradient(120deg,#2980b9, #8e44ad);
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05); 
 }
 .nav{
-    border: 1px solid rgb(102, 102, 73);
+    border: 1px solid white
 }
 header{
     border: 1px solid white;
 }
-label:hover{
-    background-color: blue;
-}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
