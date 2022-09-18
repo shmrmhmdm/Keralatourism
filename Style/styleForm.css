@@ -8,6 +8,12 @@ form{
     border-radius: 10px;
     box-shadow: 10px 10px 15px rgba(0,0,0,0.05); 
 }
+.center h4{
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid silver;
+  }
 .nav{
     border: 1px solid white
 }
