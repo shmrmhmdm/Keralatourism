@@ -9,11 +9,11 @@ function validate(){
         error.innerHTML="Valid Email Address";
         error.style.color="green";
         return true;
-    }
-    else{
-        error.innerHTML="Email Id is Invalid";
-        error.style.color="red";
-        return false;
-    }
+     }
+          else {
+               error.innerHTML="Email Id is Invalid";
+               error.style.color="red";
+               return false;
+              }
 
 }
