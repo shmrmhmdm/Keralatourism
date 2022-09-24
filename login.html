@@ -27,13 +27,14 @@
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1" style="color: white;">Password</label>
-          <input type="password" class="form-control" id="pwd" placeholder="Your Password">
+          <input type="password" class="form-control" id="psw" placeholder="Your Password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
           <label for="pass" id="pass"></label>
         </div>
         
         <button type="submit" class="btn btn-primary">Login</button>
         <label><a href="signup.html" style="color: white;text-decoration: none;" >  Create Account Now!</a>
       </form>
+      
       <script src="loginvalid.js"></script>
       </div>
 </body>

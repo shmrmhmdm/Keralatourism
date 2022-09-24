@@ -1,19 +1,81 @@
-let email=document.getElementById("email");
-let error=document.getElementById("error");
-let pwd=document.getElementById("pwd");
-let pass=document.getElementById("pass");
 
 function validate(){
-    let regExp  = /^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(.[a-z]{2,3})?$/
+    var email=document.getElementById("email");
+    var error=document.getElementById("error");
+    // var pwd=document.getElementById("pwd");
+    // var pass=document.getElementById("pass");
+
+    // Used for Password Validation: Start//
+    var myInput = document.getElementById("psw");
+    var letter = document.getElementById("letter");
+    var capital = document.getElementById("capital");
+    var number = document.getElementById("number");
+    var length = document.getElementById("length");
+//Used for Password Validation:End//
+
+//    Email Validation Starts Here//
+    var regExp  = /^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(.[a-z]{2,3})?$/
     if(regExp.test(email.value)){
-        error.innerHTML="Valid Email Address";
-        error.style.color="green";
-        return true;
+
+         return true;
      }
           else {
-               error.innerHTML="Email Id is Invalid";
+               error.innerHTML="Invalid Email address";
                error.style.color="red";
+               
                return false;
               }
-
+// Email Validation END Here//
+// When the user clicks on the password field, show the message box
+myInput.onfocus = function() {
+    document.getElementById("message").style.display = "block";
+  }
+  
+  // When the user clicks outside of the password field, hide the message box
+  myInput.onblur = function() {
+    document.getElementById("message").style.display = "none";
+  }
+  
+  // When the user starts to type something inside the password field
+  myInput.onkeyup = function() {
+    // Validate lowercase letters
+    var lowerCaseLetters = /[a-z]/g;
+    if(myInput.value.match(lowerCaseLetters)) {  
+      letter.classList.remove("invalid");
+      letter.classList.add("valid");
+    } else {
+      letter.classList.remove("valid");
+      letter.classList.add("invalid");
+    }
+    
+    // Validate capital letters
+    var upperCaseLetters = /[A-Z]/g;
+    if(myInput.value.match(upperCaseLetters)) {  
+      capital.classList.remove("invalid");
+      capital.classList.add("valid");
+    } else {
+      capital.classList.remove("valid");
+      capital.classList.add("invalid");
+    }
+  
+    // Validate numbers
+    var numbers = /[0-9]/g;
+    if(myInput.value.match(numbers)) {  
+      number.classList.remove("invalid");
+      number.classList.add("valid");
+    } else {
+      number.classList.remove("valid");
+      number.classList.add("invalid");
+    }
+    
+    // Validate length
+    if(myInput.value.length >= 8) {
+      length.classList.remove("invalid");
+      length.classList.add("valid");
+    } else {
+      length.classList.remove("valid");
+      length.classList.add("invalid");
+    }
+  }
 }
+
