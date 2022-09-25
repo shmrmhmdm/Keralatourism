@@ -22,10 +22,10 @@ function validate(){
           else {
                error.innerHTML="Invalid Email address";
                error.style.color="red";
-               
                return false;
               }
 // Email Validation END Here//
+
 // When the user clicks on the password field, show the message box
 myInput.onfocus = function() {
     document.getElementById("message").style.display = "block";
@@ -77,5 +77,6 @@ myInput.onfocus = function() {
       length.classList.add("invalid");
     }
   }
+
 }
 
