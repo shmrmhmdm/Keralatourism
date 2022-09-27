@@ -1,4 +1,8 @@
 #login-head{
     margin-top: 7em;
     text-align: center;
+    color: bisque;
+}
+body{
+    background: linear-gradient(90deg,#125f92, #8e44ad);
 }
